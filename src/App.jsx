@@ -412,7 +412,7 @@ function PageHome({ nav }) {
       <div style={{ background:"linear-gradient(135deg, #0f2744 0%, #1a4d8a 100%)", borderRadius:14, padding:"28px 36px", color:"white", marginBottom:24 }}>
         <div style={{ fontSize:10, letterSpacing:"0.15em", textTransform:"uppercase", opacity:0.55, marginBottom:6 }}>Resident Clinical Reference - 2025</div>
         <h1 style={{ fontSize:28, fontWeight:700, fontFamily:"Georgia, serif", margin:"0 0 8px 0" }}>Breast Radiation Oncology</h1>
-        <p style={{ fontSize:14, opacity:1,color:"white", margin:"0 0 18px 0" }}>Educational materials courtesy of Janice Lyons, MD, PhD — presented with gratitude and permission for resident learning.</p>
+        <p style={{ fontSize:14, opacity:1,color:"white", margin:"0 0 18px 0" }}>Educational materials courtesy of Janice Lyons, MD, PhD.</p>
         <div style={{ display:"flex",color:"white", gap:8, flexWrap:"wrap" }}>
           {["35 clinical trials","Live PubMed links","Interactive diagrams","NCCN 2024 aligned"].map(function(t){ return (
             <span key={t} style={{ background:"rgba(255,255,255,0.15)", padding:"3px 12px", borderRadius:20, fontSize:11 }}>{t}</span>
