@@ -1152,7 +1152,7 @@ function PageSlnbNac() {
   return (
     <div>
       <h2>SLNB After Neoadjuvant Chemotherapy</h2>
-      <KP type="warning">Key rule: To achieve FNR &lt;10% with SLNB after NAC in cN+ -> cN0: must use dual tracer (radioactive colloid + blue dye) AND remove &gt;=3 sentinel nodes. Both criteria required.</KP>
+      <KP type="warning">Key rule: To achieve FNR &lt;10% with SLNB after NAC in cN+ {"->"} cN0: must use dual tracer (radioactive colloid + blue dye) AND remove &gt;=3 sentinel nodes. Both criteria required.</KP>
       <TrialCard id="z1071" title="ACOSOG Z1071 - FNR of SLNB After NAC in cN1 (JAMA 2013)">
         <Box type="concept">cT0-4 N1-2 M0; received NAC; primary: FNR &lt;10% in cN1 patients</Box>
         <Tbl heads={["Condition","FNR"]} rows={[
@@ -1164,10 +1164,10 @@ function PageSlnbNac() {
       </TrialCard>
       <TrialCard id="sentina" title="SENTINA - SLNB Timing Relative to NAC (Lancet Oncol 2013)" variant="orange">
         <Tbl heads={["Arm","Setting","Detection Rate","FNR"]} rows={[
-          ["A","cN0 -> SLNB before NAC only","99.2%","N/A"],
-          ["B","cN0 -> SLNB before AND after NAC","65.6% (2nd SLNB)","51.6%"],
-          ["C","cN+ -> cN0 -> SLNB after NAC","80.4%","14.2%"],
-          ["C (dual + >=3 LNs)","cN+ -> optimized SLNB after NAC","--","<10%"],
+          ["A","cN0 {"->"} SLNB before NAC only","99.2%","N/A"],
+          ["B","cN0 {"->"} SLNB before AND after NAC","65.6% (2nd SLNB)","51.6%"],
+          ["C","cN+ {"->"} cN0 {"->"} SLNB after NAC","80.4%","14.2%"],
+          ["C (dual + >=3 LNs)","cN+ {"->"} optimized SLNB after NAC","--","<10%"],
         ]} hi={[3]}/>
         <KP type="warning">Do NOT perform a second SLNB after NAC if SLNB was already done before (Arm B: 51.6% FNR!). This is a critical clinical pitfall.</KP>
       </TrialCard>
@@ -1432,8 +1432,8 @@ function PageNacIndications() {
         </Card>
       </div>
       <Tbl heads={["Clinical Stage","10-yr LRR without PMRT","Interpretation"]} rows={[
-        ["Stage I-II","0%","pCR in low stage -> PMRT may not be needed"],
-        ["Stage III","33.3%","pCR in Stage III -> PMRT still needed"],
+        ["Stage I-II","0%","pCR in low stage {"->"} PMRT may not be needed"],
+        ["Stage III","33.3%","pCR in Stage III {"->"} PMRT still needed"],
       ]} hi={[1]}/>
       <p style={{ fontSize:11, color:"#94a3b8" }}>McGuire et al. IJROBP 2007</p>
     </div>
@@ -1480,7 +1480,7 @@ function PageLrr() {
         </ul>
       </Box>
       <Tbl heads={["Recurrence Site","Standard Approach","Notes"]} rows={[
-        ["In-breast (no prior RT)","Mastectomy is standard; repeat BCS +/- RT in selected","Biopsy -> restage -> systemic -> surgery -> RT"],
+        ["In-breast (no prior RT)","Mastectomy is standard; repeat BCS +/- RT in selected","Biopsy {"->"} restage {"->"} systemic {"->"} surgery {"->"} RT"],
         ["Chest wall (no prior RT)","CW + CNI irradiation (50 Gy + boost to recurrence)","Resect if possible first"],
         ["Chest wall (prior CW RT)","Re-irradiation - multidisciplinary decision","Prior dose, time elapsed, risk all considered"],
         ["Regional nodes","Resect if possible + RT + systemic therapy","Based on prior RT history"],
@@ -1514,11 +1514,11 @@ function PageSystemic() {
         ["Premenopausal","N0","<12","No chemo"],
         ["Premenopausal","N0","12-25","TC vs observation"],
         ["Premenopausal","N0",">=26","TC x 4"],
-        ["Premenopausal","N+","Any","ddAC x 4 -> weekly paclitaxel x 12"],
+        ["Premenopausal","N+","Any","ddAC x 4 {"->"} weekly paclitaxel x 12"],
         ["Postmenopausal","N0","<26","No chemo"],
         ["Postmenopausal","N0",">=26","TC x 4"],
         ["Postmenopausal","N+","<26","No chemo"],
-        ["Postmenopausal","N+",">=26","ddAC x 4 -> weekly paclitaxel x 12"],
+        ["Postmenopausal","N+",">=26","ddAC x 4 {"->"} weekly paclitaxel x 12"],
       ]} hi={[3,7]}/>
       <Grid2>
         <Card bg="#f0fdf4" bd="#bbf7d0">
