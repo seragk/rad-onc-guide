@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts";
+import { Analytics } from "@vercel/analytics/react";
 
 // ── TRIAL DATA ──────────────────────────────────────────────────────────────
 const T = {
@@ -1745,6 +1746,7 @@ export default function App() {
           <Page id={active} nav={navigateTo}/>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
